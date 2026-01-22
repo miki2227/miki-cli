@@ -203,6 +203,10 @@ their corresponding top-level category object in your `settings.json` file.
   - **Description:** Hide the application banner
   - **Default:** `false`
 
+- **`ui.customAsciiArt`** (string):
+  - **Description:** Custom ASCII art to display in the header.
+  - **Default:** `undefined`
+
 - **`ui.hideContextSummary`** (boolean):
   - **Description:** Hide the context summary (GEMINI.md, MCP servers) above the
     input.

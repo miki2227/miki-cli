@@ -222,6 +222,12 @@
           "default": false,
           "type": "boolean"
         },
+        "customAsciiArt": {
+          "title": "Custom ASCII Art",
+          "description": "Custom ASCII art to display in the header.",
+          "markdownDescription": "Custom ASCII art to display in the header.\n\n- Category: `UI`\n- Requires restart: `no`",
+          "type": "string"
+        },
         "hideContextSummary": {
           "title": "Hide Context Summary",
           "description": "Hide the context summary (GEMINI.md, MCP servers) above the input.",

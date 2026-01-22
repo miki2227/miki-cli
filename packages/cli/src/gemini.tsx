@@ -71,8 +71,6 @@ import { validateAuthMethod } from './config/auth.js';
 import { runZedIntegration } from './zed-integration/zedIntegration.js';
 import { cleanupExpiredSessions } from './utils/sessionCleanup.js';
 import { validateNonInteractiveAuth } from './validateNonInterActiveAuth.js';
-import { checkForUpdates } from './ui/utils/updateCheck.js';
-import { handleAutoUpdate } from './utils/handleAutoUpdate.js';
 import { appEvents, AppEvent } from './utils/events.js';
 import { SessionSelector } from './utils/sessionUtils.js';
 import { SettingsContext } from './ui/contexts/SettingsContext.js';
@@ -268,17 +266,6 @@ export async function startInteractiveUI(
         settings.merged.ui.incrementalRendering !== false && useAlternateBuffer,
     },
   );
-
-  checkForUpdates(settings)
-    .then((info) => {
-      handleAutoUpdate(info, settings, config.getProjectRoot());
-    })
-    .catch((err) => {
-      // Silently ignore update check errors.
-      if (config.getDebugMode()) {
-        debugLogger.warn('Update check failed:', err);
-      }
-    });
 
   registerCleanup(() => instance.unmount());
 }
