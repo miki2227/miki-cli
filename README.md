@@ -1,24 +1,18 @@
-# Gemini CLI
+# Miki CLI
 
-[![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
-[![Gemini CLI E2E (Chained)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml)
-[![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
-[![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
-[![View Code Wiki](https://www.gstatic.com/_/boq-sdlc-agents-ui/_/r/YUi5dj2UWvE.svg)](https://codewiki.google/github.com/google-gemini/gemini-cli)
+![Miki CLI Screenshot](./docs/assets/Miki-screenshot.png)
 
-![Gemini CLI Screenshot](./docs/assets/gemini-screenshot.png)
-
-Gemini CLI is an open-source AI agent that brings the power of Gemini directly
-into your terminal. It provides lightweight access to Gemini, giving you the
+Miki CLI is an open-source AI agent that brings the power of Miki directly
+into your terminal. It provides lightweight access to Miki, giving you the
 most direct path from your prompt to our model.
 
-Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
+Learn all about Miki CLI in our [documentation](https://Mikicli.com/docs/).
 
-## 🚀 Why Gemini CLI?
+## 🚀 Why Miki CLI?
 
 - **🎯 Free tier**: 60 requests/min and 1,000 requests/day with personal Google
   account.
-- **🧠 Powerful Gemini 3 models**: Access to improved reasoning and 1M token
+- **🧠 Powerful Miki 3 models**: Access to improved reasoning and 1M token
   context window.
 - **🔧 Built-in tools**: Google Search grounding, file operations, shell
   commands, web fetching.
@@ -40,19 +34,19 @@ Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
 
 ```bash
 # Using npx (no installation required)
-npx @google/gemini-cli
+npx @google/Miki-cli
 ```
 
 #### Install globally with npm
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @google/Miki-cli
 ```
 
 #### Install globally with Homebrew (macOS/Linux)
 
 ```bash
-brew install gemini-cli
+brew install Miki-cli
 ```
 
 ## Release Cadence and Tags
@@ -66,7 +60,7 @@ releases will not have been fully vetted and may contain regressions or other
 outstanding issues. Please help us test and install with `preview` tag.
 
 ```bash
-npm install -g @google/gemini-cli@preview
+npm install -g @google/Miki-cli@preview
 ```
 
 ### Stable
@@ -76,7 +70,7 @@ npm install -g @google/gemini-cli@preview
   and validations. Use `latest` tag.
 
 ```bash
-npm install -g @google/gemini-cli@latest
+npm install -g @google/Miki-cli@latest
 ```
 
 ### Nightly
@@ -86,7 +80,7 @@ npm install -g @google/gemini-cli@latest
   there are pending validations and issues. Use `nightly` tag.
 
 ```bash
-npm install -g @google/gemini-cli@nightly
+npm install -g @google/Miki-cli@nightly
 ```
 
 ## 📋 Key Features
@@ -108,21 +102,21 @@ npm install -g @google/gemini-cli@nightly
 ### Advanced Capabilities
 
 - Ground your queries with built-in
-  [Google Search](https://ai.google.dev/gemini-api/docs/grounding) for real-time
+  [Google Search](https://ai.google.dev/Miki-api/docs/grounding) for real-time
   information
 - Conversation checkpointing to save and resume complex sessions
-- Custom context files (GEMINI.md) to tailor behavior for your projects
+- Custom context files (Miki.md) to tailor behavior for your projects
 
 ### GitHub Integration
 
-Integrate Gemini CLI directly into your GitHub workflows with
-[**Gemini CLI GitHub Action**](https://github.com/google-github-actions/run-gemini-cli):
+Integrate Miki CLI directly into your GitHub workflows with
+[**Miki CLI GitHub Action**](https://github.com/google-github-actions/run-Miki-cli):
 
 - **Pull Request Reviews**: Automated code review with contextual feedback and
   suggestions
 - **Issue Triage**: Automated labeling and prioritization of GitHub issues based
   on content analysis
-- **On-demand Assistance**: Mention `@gemini-cli` in issues and pull requests
+- **On-demand Assistance**: Mention `@Miki-cli` in issues and pull requests
   for help with debugging, explanations, or task delegation
 - **Custom Workflows**: Build automated, scheduled and on-demand workflows
   tailored to your team's needs
@@ -133,22 +127,22 @@ Choose the authentication method that best fits your needs:
 
 ### Option 1: Login with Google (OAuth login using your Google Account)
 
-**✨ Best for:** Individual developers as well as anyone who has a Gemini Code
+**✨ Best for:** Individual developers as well as anyone who has a Miki Code
 Assist License. (see
-[quota limits and terms of service](https://cloud.google.com/gemini/docs/quotas)
+[quota limits and terms of service](https://cloud.google.com/Miki/docs/quotas)
 for details)
 
 **Benefits:**
 
 - **Free tier**: 60 requests/min and 1,000 requests/day
-- **Gemini 3 models** with 1M token context window
+- **Miki 3 models** with 1M token context window
 - **No API key management** - just sign in with your Google account
 - **Automatic updates** to latest models
 
-#### Start Gemini CLI, then choose _Login with Google_ and follow the browser authentication flow when prompted
+#### Start Miki CLI, then choose _Login with Google_ and follow the browser authentication flow when prompted
 
 ```bash
-gemini
+Miki
 ```
 
 #### If you are using a paid Code Assist License from your organization, remember to set the Google Cloud Project
@@ -156,23 +150,23 @@ gemini
 ```bash
 # Set your Google Cloud Project
 export GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID"
-gemini
+Miki
 ```
 
-### Option 2: Gemini API Key
+### Option 2: Miki API Key
 
 **✨ Best for:** Developers who need specific model control or paid tier access
 
 **Benefits:**
 
-- **Free tier**: 1000 requests/day with Gemini 3 (mix of flash and pro)
-- **Model selection**: Choose specific Gemini models
+- **Free tier**: 1000 requests/day with Miki 3 (mix of flash and pro)
+- **Model selection**: Choose specific Miki models
 - **Usage-based billing**: Upgrade for higher limits when needed
 
 ```bash
 # Get your key from https://aistudio.google.com/apikey
-export GEMINI_API_KEY="YOUR_API_KEY"
-gemini
+export Miki_API_KEY="YOUR_API_KEY"
+Miki
 ```
 
 ### Option 3: Vertex AI
@@ -189,7 +183,7 @@ gemini
 # Get your key from Google Cloud Console
 export GOOGLE_API_KEY="YOUR_API_KEY"
 export GOOGLE_GENAI_USE_VERTEXAI=true
-gemini
+Miki
 ```
 
 For Google Workspace accounts and other authentication methods, see the
@@ -202,19 +196,19 @@ For Google Workspace accounts and other authentication methods, see the
 #### Start in current directory
 
 ```bash
-gemini
+Miki
 ```
 
 #### Include multiple directories
 
 ```bash
-gemini --include-directories ../lib,../docs
+Miki --include-directories ../lib,../docs
 ```
 
 #### Use specific model
 
 ```bash
-gemini -m gemini-2.5-flash
+Miki -m Miki-2.5-flash
 ```
 
 #### Non-interactive mode for scripts
@@ -222,21 +216,21 @@ gemini -m gemini-2.5-flash
 Get a simple text response:
 
 ```bash
-gemini -p "Explain the architecture of this codebase"
+Miki -p "Explain the architecture of this codebase"
 ```
 
 For more advanced scripting, including how to parse JSON and handle errors, use
 the `--output-format json` flag to get structured output:
 
 ```bash
-gemini -p "Explain the architecture of this codebase" --output-format json
+Miki -p "Explain the architecture of this codebase" --output-format json
 ```
 
 For real-time event streaming (useful for monitoring long-running operations),
 use `--output-format stream-json` to get newline-delimited JSON events:
 
 ```bash
-gemini -p "Run tests and deploy" --output-format stream-json
+Miki -p "Run tests and deploy" --output-format stream-json
 ```
 
 ### Quick Examples
@@ -245,16 +239,16 @@ gemini -p "Run tests and deploy" --output-format stream-json
 
 ```bash
 cd new-project/
-gemini
+Miki
 > Write me a Discord bot that answers questions using a FAQ.md file I will provide
 ```
 
 #### Analyze existing code
 
 ```bash
-git clone https://github.com/google-gemini/gemini-cli
-cd gemini-cli
-gemini
+git clone https://github.com/google-Miki/Miki-cli
+cd Miki-cli
+Miki
 > Give me a summary of all of the changes that went in yesterday
 ```
 
@@ -277,8 +271,8 @@ gemini
   (`/help`, `/chat`, etc).
 - [**Custom Commands**](./docs/cli/custom-commands.md) - Create your own
   reusable commands.
-- [**Context Files (GEMINI.md)**](./docs/cli/gemini-md.md) - Provide persistent
-  context to Gemini CLI.
+- [**Context Files (Miki.md)**](./docs/cli/Miki-md.md) - Provide persistent
+  context to Miki CLI.
 - [**Checkpointing**](./docs/cli/checkpointing.md) - Save and resume
   conversations.
 - [**Token Caching**](./docs/cli/token-caching.md) - Optimize token usage.
@@ -296,9 +290,9 @@ gemini
 
 ### Advanced Topics
 
-- [**Headless Mode (Scripting)**](./docs/cli/headless.md) - Use Gemini CLI in
+- [**Headless Mode (Scripting)**](./docs/cli/headless.md) - Use Miki CLI in
   automated workflows.
-- [**Architecture Overview**](./docs/architecture.md) - How Gemini CLI works.
+- [**Architecture Overview**](./docs/architecture.md) - How Miki CLI works.
 - [**IDE Integration**](./docs/ide-integration/index.md) - VS Code companion.
 - [**Sandboxing & Security**](./docs/cli/sandbox.md) - Safe execution
   environments.
@@ -320,7 +314,7 @@ gemini
 
 ### Using MCP Servers
 
-Configure MCP servers in `~/.gemini/settings.json` to extend Gemini CLI with
+Configure MCP servers in `~/.Miki/settings.json` to extend Miki CLI with
 custom tools:
 
 ```text
@@ -334,7 +328,7 @@ instructions.
 
 ## 🤝 Contributing
 
-We welcome contributions! Gemini CLI is fully open source (Apache 2.0), and we
+We welcome contributions! Miki CLI is fully open source (Apache 2.0), and we
 encourage the community to:
 
 - Report bugs and suggest features.
@@ -345,18 +339,18 @@ encourage the community to:
 See our [Contributing Guide](./CONTRIBUTING.md) for development setup, coding
 standards, and how to submit pull requests.
 
-Check our [Official Roadmap](https://github.com/orgs/google-gemini/projects/11)
+Check our [Official Roadmap](https://github.com/orgs/google-Miki/projects/11)
 for planned features and priorities.
 
 ## 📖 Resources
 
 - **[Official Roadmap](./ROADMAP.md)** - See what's coming next.
 - **[Changelog](./docs/changelogs/index.md)** - See recent notable updates.
-- **[NPM Package](https://www.npmjs.com/package/@google/gemini-cli)** - Package
+- **[NPM Package](https://www.npmjs.com/package/@google/Miki-cli)** - Package
   registry.
-- **[GitHub Issues](https://github.com/google-gemini/gemini-cli/issues)** -
+- **[GitHub Issues](https://github.com/google-Miki/Miki-cli/issues)** -
   Report bugs or request features.
-- **[Security Advisories](https://github.com/google-gemini/gemini-cli/security/advisories)** -
+- **[Security Advisories](https://github.com/google-Miki/Miki-cli/security/advisories)** -
   Security updates.
 
 ### Uninstall
